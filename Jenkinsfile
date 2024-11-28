@@ -27,7 +27,7 @@ pipeline {
             steps {
                 // Run the Docker container in detached mode
                 dir('Step_Project_2') {
-                sh 'docker run -d --name ${CONTAINER_NAME} -p 3000:3000 -p 8080:4000 ${DOCKER_IMAGE_NAME}' 
+                sh 'docker run -d --name ${CONTAINER_NAME} -p 3000:3000 -p 80:80 ${DOCKER_IMAGE_NAME}' 
                 }
             }
         }

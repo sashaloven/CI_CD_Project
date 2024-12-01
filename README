@@ -16,24 +16,18 @@ Setting Up Locally 💻
 1. Clone the repository
 Clone this repository to your local machine using Git:
 
-###
-git clone <repository-url>
-cd Step_Project_2
-###
+> git clone <repository-url>
+> cd Step_Project_2
 
 2. Install dependencies
 If you want to run the application locally, first install the dependencies:
 
-###
-npm install
-###
+> npm install
 
 3. Running the app
 You can start the app locally with:
 
-###
-node index.js
-###
+> node index.js
 The application should now be running on the default port (or the one specified in the code). 🎉
 
 Running the Application with Docker 🐳
@@ -41,23 +35,19 @@ The repository includes a Dockerfile to containerize the application. To build a
 
 1. Build the Docker image:
 
-###
-docker build -t step-project-2 .
-###
+> docker build -t step-project-2 .
 
 2. Run the Docker container:
 
-###
-docker run -p 3000:3000 step-project-2
-###
+> docker run -p 3000:3000 step-project-2
+
 The application will be available at http://localhost:3000. 🎈
 
 Running Tests 🧪
 Unit tests for the application are located in the test/app.test.js file. To run the tests:
 
-###
-npm test
-###
+> npm test
+
 Jest (or the testing framework defined in package.json) will run the tests and show the results in your terminal. ✅
 
 
